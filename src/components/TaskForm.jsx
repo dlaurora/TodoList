@@ -5,10 +5,9 @@ const TaskForm = ({ addTask }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Solo agrega la tarea si el input no está vacío
     if (input.trim() !== '') {
       addTask(input);
-      setInput(''); // Limpia el input después de agregar la tarea
+      setInput('');
     }
   };
 
@@ -21,9 +20,7 @@ const TaskForm = ({ addTask }) => {
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter a task"
       />
-      <button type="submit" className="task-button">
-        Add Task
-      </button>
+      <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Add Task </button>
     </form>
   );
 };

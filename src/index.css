@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .app {
   font-family: 'Arial', sans-serif;
   max-width: 600px;
@@ -93,4 +97,13 @@ form {
   margin-right: 0.5rem;
   color: #6b7280;
   font-weight: bold;
+}
+
+.save-btn {
+  margin-right: 10px;
+}
+
+.save-btn,
+.cancel-btn {
+  min-width: 80px;
 }
